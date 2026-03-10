@@ -1,0 +1,25 @@
+.footer-container {
+  width: 110%;
+  overflow: hidden;
+  position: relative;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.floating-name {
+  position: absolute;
+  white-space: nowrap;
+  color: white;
+  font-size: 12px;
+  animation: moveText 25s linear infinite;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

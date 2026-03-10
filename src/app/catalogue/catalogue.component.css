@@ -1,14 +1,12 @@
+iframe {
+  border: none;
+  width: 105%;
+  height: 620px;
+}
 
+@media (min-width: 768px) {
   iframe {
-    border: none;
-    width: 100%;
-    height: 620px;
-    
+    width: 50%;
+    height: 720px;
   }
-  
-  @media (min-width: 768px) {
-    iframe {
-      width: 50%;
-      height: 720px;
-    }
-  }
+}
