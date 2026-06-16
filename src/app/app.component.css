@@ -10,7 +10,7 @@
   position: absolute;
   white-space: nowrap;
   color: white;
-  font-size: 52px;
+  font-size: 42px;
   animation: moveText 25s linear infinite;
   text-shadow: 0 0 5px #ff0000;
 }
