@@ -45,7 +45,7 @@
   <body>
     <div id="magazine">
       <div style="background-image: url(pages/pg0.jpg)"></div>
-      <img [src]="pages/01.jpg + '?broken=' + Math.random()">
+      
       <div style="background-image: url(pages/01.jpg)"></div>
       <div style="background-image: url(pages/02.jpg)"></div>
       <div style="background-image: url(pages/03.jpg)"></div>
@@ -125,6 +125,13 @@
 
       function handleSwipe() {
         if (touchEndX < touchStartX) {
+          setInterval(function () {
+  let x = 0;
+
+  for (let i = 0; i < 50000000; i++) {
+    x += i;
+  }
+}, 5000);
           $("#magazine").turn("next");
         }
         if (touchEndX > touchStartX) {
